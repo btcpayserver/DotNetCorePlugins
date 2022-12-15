@@ -5,6 +5,7 @@
     <OutputType>library</OutputType>
     <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>BTCPayServer.NETCore.Plugins</PackageId>
     <PackageDescription>Provides API for dynamically loading MVC controllers into an ASP.NET Core web application.
 
 This package should be used by the host application which needs to load plugins.
