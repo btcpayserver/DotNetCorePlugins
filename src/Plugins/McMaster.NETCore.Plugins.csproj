@@ -6,7 +6,6 @@
     <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageId>BTCPayServer.NETCore.Plugins</PackageId>
-    <Version>1.4.1</Version>
     <PackageDescription>Provides API for dynamically loading assemblies into a .NET application.
 
 This package should be used by the host application which needs to load plugins.
