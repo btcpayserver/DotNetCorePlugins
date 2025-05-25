@@ -178,12 +178,9 @@ namespace McMaster.NETCore.Plugins.Loader
 
         public Assembly LoadAssemblyFromFilePath(string path)
         {
-            var ctx = _preferDefaultLoadContext
-                ? _defaultLoadContext
-                : this;
             if (!_loadInMemory)
             {
-                return ctx.LoadFromAssemblyPath(path);
+                return LoadFromAssemblyPath(path);
             }
 
             using var file = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
@@ -191,9 +188,9 @@ namespace McMaster.NETCore.Plugins.Loader
             if (File.Exists(pdbPath))
             {
                 using var pdbFile = File.Open(pdbPath, FileMode.Open, FileAccess.Read, FileShare.Read);
-                return ctx.LoadFromStream(file, pdbFile);
+                return LoadFromStream(file, pdbFile);
             }
-            return ctx.LoadFromStream(file);
+            return LoadFromStream(file);
 
         }
 
