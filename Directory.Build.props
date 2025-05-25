@@ -33,7 +33,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageVersion>1.4.4</PackageVersion>
+    <PackageVersion>1.4.6</PackageVersion>
   </PropertyGroup>
 
   <Import Project="$(MSBuildProjectDirectory)\releasenotes.props"
